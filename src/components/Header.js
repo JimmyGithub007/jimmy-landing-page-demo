@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import { MenuContext } from "../pages/DemoOne";
 
 const menu = [
@@ -34,7 +34,7 @@ const Header = () => {
                         <a href={`#${value.target}`} key={key} className={`duration-200 py-2 hover:bg-gray-200 hover:text-indigo-500 text-white ${menuContext.menuId === value.target && "bg-white text-indigo-500"}`}>{value.name}</a>
                     ))
                 }
-                <a onClick={() => setOpen(false) } className={`duration-200 py-2 hover:bg-gray-200 hover:text-indigo-500 text-white`}>X</a>
+                <button onClick={() => setOpen(false) } className={`duration-200 py-2 hover:bg-gray-200 hover:text-indigo-500 text-white`}>X</button>
             </div>
         </div>
     </>)
