@@ -2,10 +2,10 @@ import { SiFacebook, SiInstagram, SiTwitter } from "react-icons/si";
 import { TiHome, TiMail, TiPhone } from "react-icons/ti";
 
 const FooterDetail = () => {
-    return (<div className="bg-white min-h-64 p-6 px-12 md:p-12">
+    return (<div className="min-h-64 p-6 px-12 md:p-12">
         <div className="flex flex-col justify-center md:flex-row gap-8">
             <div className="max-w-xs">
-                <h1 className="font-semibold text-xl">Demo Website</h1>
+                <h1 className="font-semibold text-xl">About Us</h1>
                 <div className="my-3">
                     <p className="text-sm">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

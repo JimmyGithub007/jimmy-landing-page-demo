@@ -17,7 +17,7 @@ const Features = () => {
 
     return (<div id="features" className="bg-gray-200 content-center min-h-screen grid pb-24 pt-12" ref={menuContext.featuresRef}>
         <h2 className="font-bold pb-8 text-center text-gray-800 text-2xl">
-            Features
+            <span className="font-light">Our</span> Features
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
             {
@@ -31,8 +31,7 @@ const Features = () => {
                                 {feature.name}
                             </h4>
                             <p className="text-body-color">
-                                We dejoy working with discerning clients, people for whom
-                                qualuty, service, integrity & aesthetics.
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur at aut odit aut fugit sed quia consequuntur magni.
                             </p>
                         </div>
                     </div>
