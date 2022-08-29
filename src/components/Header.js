@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { SiReact } from "react-icons/si"
 import { MenuContext } from "../pages/DemoOne";
 
 const menu = [
@@ -16,7 +17,10 @@ const Header = () => {
     return (<>
         <div id="header" className={`duration-500 h-16 p-4 sticky top-0 z-20 ${menuContext.scrollY > 0 && "sm:backdrop-blur-sm sm:bg-white/[0.6] sm:h-12 sm:px-4 sm:py-2 sm:shadow-md"}`}>
             <div className="flex justify-end sm:justify-between">
-                <div id="logo" className="px-4 py-1 border-l-4 border-indigo-500 hidden sm:block">Demo 1</div>
+                <div id="logo" className="gap-2 hidden items-center sm:flex text-indigo-500 text-xl">
+                    <SiReact />
+                    <span>DEMO ONE</span>
+                </div>
                 <div className="flex">
                     {
                         menu.map((value, key) => (

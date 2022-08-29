@@ -12,12 +12,12 @@ const Pricing = () => {
 
     return (<div id="pricing" className={`bg-indigo-100 min-h-screen sm:-mt-16 grid content-center pb-12 duration-300`} ref={menuContext.pricingRef}>
         <h2 className="font-bold py-8 text-center text-gray-800 text-2xl">
-            Pricing
+            <span className="font-light">Our</span> Pricing
         </h2>
         <div className="flex flex-col justify-center md:flex-row">
             {
                 pricing.map((value, key) => (
-                    <div className={`bg-white duration-300 md:max-w-min w-full origin-bottom overflow-hidden rounded shadow-lg ${key !== 1 ? `hover:md:${key === 0 ? "-" : ""}rotate-6` : "bg-indigo-500 md:scale-105 z-10"} ${menuContext.menuId === "pricing" ? "mt-0 opacity-100" : `-mb-10 opacity-0`}`} key={key}>
+                    <div className={`bg-white duration-300 md:max-w-min w-full origin-bottom overflow-hidden rounded shadow-lg ${key === 1 && "bg-indigo-500 md:scale-105 z-10"} ${menuContext.menuId === "pricing" ? "mt-0 opacity-100" : `-mb-10 opacity-0`}`} key={key}>
                         <div className="px-6 py-4">
                             <h1 className={`font-semibold text-xl text-${key === 1 ? "white" : "gray-500"}`}>{value.title}</h1>
                             <div className="text-center py-4 px-7">
