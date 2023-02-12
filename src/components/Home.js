@@ -1,17 +1,24 @@
-import { AiOutlineArrowDown } from "react-icons/ai";
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
-    return (<div id="home" className="animate-opacity bg-bottom bg-no-repeat duration-500 h-screen bg-contain md:bg-auto lg:bg-right" style={{ backgroundImage: `url('./images/undraw_experience_design_re_ca7l.svg')` }}>
-        <div className="content-center grid h-full -mt-16 lg:max-w-xs xl:max-w-lg">
-            <h1 className="px-4 py-2 text-center text-2xl lg:text-3xl xl:text-4xl">
-                Make Your Marketing Real.
-            </h1>
-            <h2 className="font-light px-4 py-2 text-center text-base xl:text-lg">
+    return (<div id="home" className="animate-opacity bg-bottom bg-contain bg-no-repeat duration-500 flex h-[calc(100vh-64px)] xl:items-center md:bg-auto xl:bg-right" style={{ backgroundImage: `url('./images/undraw_launch_day_4e04.svg')` }}>
+        <div className="flex flex-col max-w-md px-4 py-2 gap-4">
+            <span className="font-bold text-xl lg:text-2xl xl:text-3xl text-indigo-500">
+                <Typewriter
+                    options={{
+                        strings: ['', 'Make Your Marketing Real.'],
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />
+            </span>
+            <span className="text-base text-gray-600 xl:text-lg">
                 Ut enim ad minima veniam quis nostrum exercitationem ullam corporis at suscipit laboriosam nisi ut aliquid a commodi consequatur Quis autem.
-            </h2>
-            <a href="#features" className="animate-bounce active:border-b-2 active:mt-[2px] border-b-4 border-indigo-500 bg-indigo-400 duration-100 hover:bg-indigo-300 justify-self-center p-3 rounded-full shadow-md text-white">
-                <AiOutlineArrowDown />
-            </a>
+            </span>
+            <button className="flex relative w-fit">
+                <span className="border-2 border-indigo-500 bg-white font-bold h-full px-2 py-1 rounded-md text-indigo-500 w-full z-10 active:translate-x-1 active:translate-y-1">More Details</span>
+                <div className="absolute bg-indigo-500 h-full left-1 rounded-md top-1 w-full shadow-lg"></div>
+            </button>
         </div>
     </div>)
 }

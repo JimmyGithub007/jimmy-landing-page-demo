@@ -7,7 +7,8 @@ const menu = [
     { name: "Home", target: "home" },
     { name: "Features", target: "features" },
     { name: "Our Team", target: "team" },
-    { name: "Pricing", target: "pricing" }
+    { name: "Pricing", target: "pricing" },
+    { name: "Contact Us", target: "contact" }
 ];
 
 const Header = () => {
@@ -17,9 +18,11 @@ const Header = () => {
     return (<>
         <div id="header" className={`duration-500 h-16 p-4 sticky top-0 z-20 ${menuContext.scrollY > 0 && "sm:backdrop-blur-sm sm:bg-white/[0.6] sm:h-12 sm:px-4 sm:py-2 sm:shadow-md"}`}>
             <div className="flex justify-end sm:justify-between">
-                <div id="logo" className="gap-2 hidden items-center sm:flex text-indigo-500 text-xl">
-                    <SiReact />
-                    <span>DEMO ONE</span>
+                <div id="logo" className="hidden items-center sm:flex text-indigo-500 text-xl">
+                    <div className="bg-indigo-500 rounded-full p-1 text-white">
+                        <SiReact />
+                    </div>
+                    <span className="font-bold ml-2 mr-1">DEMO</span><span className="bg-indigo-500 rounded-bl-xl px-2 text-white">ONE</span>
                 </div>
                 <div className="flex">
                     {
@@ -31,7 +34,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
-        <div className={`duration-500 fixed bg-indigo-500 z-20 top-0 left-0 min-w-full ${open ? "m-0 sm:-mt-[264px]" : "-mt-[264px]"}`}>
+        <div className={`duration-500 fixed bg-indigo-500 z-20 top-0 left-0 min-w-full ${open ? "m-0 sm:-mt-[304px]" : "-mt-[304px]"}`}>
             <div className="flex flex-col text-center py-8">
                 {
                     menu.map((value, key) => (
