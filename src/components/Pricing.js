@@ -11,9 +11,9 @@ const Pricing = () => {
     const menuContext = useContext(MenuContext);
 
     return (<div id="pricing" className={`bg-indigo-100 min-h-screen sm:-mt-16 grid content-center pb-12 duration-300`} ref={menuContext.pricingRef}>
-        <h2 className="font-bold py-8 text-center text-gray-800 text-2xl">
+        <span className="font-bold py-8 text-center text-gray-800 text-2xl">
             <span className="font-light">Our</span> Pricing
-        </h2>
+        </span>
         <div className="flex flex-col justify-center md:flex-row">
             {
                 pricing.map((value, key) => (

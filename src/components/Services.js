@@ -12,12 +12,12 @@ const features = [
     { name: "Responsive design", icon: <DiResponsive className="w-12 h-12" />, duration: "duration-1000" }
 ];
 
-const Features = () => {
+const Services = () => {
     const menuContext = useContext(MenuContext);
 
     return (<div id="features" className="bg-gray-200 content-center min-h-screen grid pb-24 pt-12" ref={menuContext.featuresRef}>
         <h2 className="font-bold pb-8 text-center text-gray-800 text-2xl">
-            <span className="font-light">Our</span> Features
+            <span className="font-light">Our</span> Services
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
             {
@@ -41,4 +41,4 @@ const Features = () => {
     </div>)
 }
 
-export default Features;
+export default Services;
